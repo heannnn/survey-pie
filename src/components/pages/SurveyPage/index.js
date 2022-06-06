@@ -12,14 +12,27 @@ function SurveyPage() {
       desc: 'desc1 입니다.',
       type: 'select',
       required: false,
-      options: {},
+      options: {
+        items: ['답변1', '답변2', '답변3', '답변4', '답변5'],
+      },
     },
     {
       title: 'Q2 입니다.',
       desc: 'desc2 입니다.',
       type: 'text',
       required: true,
-      options: {},
+      options: {
+        placeholder: 'placeholder Q2',
+      },
+    },
+    {
+      title: 'Q3 입니다.',
+      desc: 'desc3 입니다.',
+      type: 'textarea',
+      required: true,
+      options: {
+        placeholder: 'placeholder Q3',
+      },
     },
   ];
   const params = useParams();
